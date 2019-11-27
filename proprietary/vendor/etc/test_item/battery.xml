@@ -1,0 +1,79 @@
+<?xml version="1.0" ?>
+<TestCases>
+    <Description>Battery Testcases</Description>
+    <Item>
+        <Description>USB voltage</Description>
+        <Step index="1">
+            <type>file</type>
+            <addr>/sys/class/power_supply/usb/voltage_now</addr>
+            <operation>read</operation>
+            <value type="show">0</value>
+        </Step>
+    </Item>
+
+    <Item>
+        <Description>USB current</Description>
+        <Step index="1">
+            <type>file</type>
+            <addr>/sys/class/power_supply/battery/input_suspend</addr>
+            <operation>write</operation>
+            <value>0</value>
+        </Step>
+        <Step index="2">
+            <type>file</type>
+            <addr>/sys/class/power_supply/usb/input_current_now</addr>
+            <operation>read</operation>
+            <value type="show">0</value>
+        </Step>
+    </Item>
+
+    <Item>
+        <Description>Battery ID</Description>
+        <Step index="1">
+            <type>file</type>
+            <addr>/sys/class/power_supply/bms/resistance_id</addr>
+            <operation>read</operation>
+            <value type="show">0</value>
+        </Step>
+    </Item>
+
+    <Item>
+        <Description>Battery current</Description>
+        <Step index="1">
+            <type>file</type>
+            <addr>/sys/class/power_supply/bms/current_now</addr>
+            <operation>read</operation>
+            <value type="show">0</value>
+        </Step>
+    </Item>
+
+    <Item>
+        <Description>Battery voltage</Description>
+        <Step index="1">
+            <type>file</type>
+            <addr>/sys/class/power_supply/bms/voltage_ocv</addr>
+            <operation>read</operation>
+            <value type="show">0</value>
+        </Step>
+    </Item>
+
+    <Item>
+        <Description>Battery temperature</Description>
+        <Step index="1">
+            <type>file</type>
+            <addr>/sys/class/power_supply/bms/temp</addr>
+            <operation>read</operation>
+            <value type="show">0</value>
+        </Step>
+    </Item>
+
+    <Item>
+        <Description>Battery capacity</Description>
+        <Step index="1">
+            <type>file</type>
+            <addr>/sys/class/power_supply/battery/capacity</addr>
+            <operation>read</operation>
+            <value type="show">0</value>
+        </Step>
+    </Item>
+</TestCases>

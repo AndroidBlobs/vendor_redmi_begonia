@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<testlist>
+    <testitem>
+        <id>48</id>
+        <testname>加速度感应器测试</testname>
+    </testitem>
+    <testitem>
+        <id>49</id>
+        <testname>陀螺仪感应器测试</testname>
+    </testitem>
+    <testitem>
+        <id>51</id>
+        <testname>磁场感应器测试</testname>
+    </testitem>
+    <testitem>
+        <id>50</id>
+        <testname>光线感应器测试</testname>
+    </testitem>
+     <testitem>
+        <id>53</id>
+        <testname>电池测试</testname>
+    </testitem>
+    <testitem>
+        <id>63</id>
+        <testname>无SIM卡测试</testname>
+    </testitem>
+    <testitem>
+        <id>54</id>
+        <testname>GPS测试</testname>
+    </testitem>
+    <testitem>
+        <id>57</id>
+        <testname>后置相机测试</testname>
+        <addtionalparams>total_camera_id:6,camera_id_rear_main:0</addtionalparams>
+    </testitem>
+    <testitem>
+        <id>60</id>
+        <testname>2M macro相机测试相机测试</testname>
+        <addtionalparams>total_camera_id:6,camera_id_rear_sub_second:3</addtionalparams>
+    </testitem>
+    <testitem>
+        <id>59</id>
+        <testname>2M depth相机测试</testname>
+        <addtionalparams>total_camera_id:6,camera_id_rear_sub:2</addtionalparams>
+    </testitem>
+    <testitem>
+        <id>58</id>
+        <testname>前置相机测试</testname>
+        <addtionalparams>total_camera_id:6,camera_id_front:1</addtionalparams>
+    </testitem>
+    <testitem>
+        <id>61</id>
+        <testname>8M ultra相机测试</testname>
+        <addtionalparams>total_camera_id:6,camera_id_rear_aux:4</addtionalparams>
+    </testitem>
+    <testitem>
+        <id>52</id>
+        <testname>指纹传感器测试</testname>
+    </testitem>
+</testlist>

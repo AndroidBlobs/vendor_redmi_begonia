@@ -1,0 +1,33 @@
+<?xml version="1.0" ?>
+<TestCases>
+    <Description>Version Testcases</Description>
+    <Item>
+        <Description>Software version</Description>
+        <Step index="1">
+            <type>prop</type>
+            <addr>ro.build.description</addr>
+            <operation>read</operation>
+            <value type="show">0</value>
+        </Step>
+    </Item>
+
+    <Item>
+        <Description>AP Build</Description>
+        <Step index="1">
+            <type>prop</type>
+            <addr>ro.build.version.incremental</addr>
+            <operation>read</operation>
+            <value type="show">0</value>
+        </Step>
+    </Item>
+
+    <Item>
+        <Description>Hardware version</Description>
+        <Step index="1">
+            <type>prop</type>
+            <addr>ro.boot.hwversion</addr>
+            <operation>read</operation>
+            <value type="show">0</value>
+        </Step>
+    </Item>
+</TestCases>
